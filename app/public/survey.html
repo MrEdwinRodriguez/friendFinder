@@ -12,6 +12,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script src="https://code.jquery.com/jquery.js"></script>
 
 </head>
 <body>
@@ -40,7 +41,7 @@
   <input type="radio" name="question2" value="2"> 2<br>
   <input type="radio" name="question2" value="3"> 3<br>
   <input type="radio" name="question2" value="4"> 4<br>  
-  <input type="radio" name="questing2" value="5"> 5
+  <input type="radio" name="question2" value="5"> 5
 </form>
 
 <form>3.  Going to the beach is more fun than going to the club.<br>
@@ -51,63 +52,63 @@
   <input type="radio" name="question3" value="5"> 5
 </form>
 
-<form>4.  I like to drink on the weekends.<br>
-  <input type="radio" name="question4" value='1'> 1<br>
-  <input type="radio" name="question4" value="2"> 2<br>
-  <input type="radio" name="question4" value="3"> 3<br>
-  <input type="radio" name="question4" value="4"> 4<br>  
-  <input type="radio" name="question4" value="5"> 5
+<!-- <form>4.  I like to drink on the weekends.<br>
+  <input type="radio" class="question4" value='1'> 1<br>
+  <input type="radio" class="question4" value="2"> 2<br>
+  <input type="radio" class="question4" value="3"> 3<br>
+  <input type="radio" class="question4" value="4"> 4<br>  
+  <input type="radio" class="question4" value="5"> 5
 </form>
 
 <form>5.  Star Wars is better than Star Trek.<br>
-  <input type="radio" name="question5" value='1'> 1<br>
-  <input type="radio" name="question5" value="2"> 2<br>
-  <input type="radio" name="question5" value="3"> 3<br>
-  <input type="radio" name="question5" value="4"> 4<br>  
-  <input type="radio" name="question5" value="5"> 5
+  <input type="radio" class="question5" value='1'> 1<br>
+  <input type="radio" class="question5" value="2"> 2<br>
+  <input type="radio" class="question5" value="3"> 3<br>
+  <input type="radio" class="question5" value="4"> 4<br>  
+  <input type="radio" class="question5" value="5"> 5
 </form>
 
 <form>6.  I love reality TV.<br>
-  <input type="radio" name="question6" value='1'> 1<br>
-  <input type="radio" name="question6" value="2"> 2<br>
-  <input type="radio" name="question6" value="3"> 3<br>
-  <input type="radio" name="question6" value="4"> 4<br>  
-  <input type="radio" name="question6" value="5"> 5
+  <input type="radio" class="question6" value='1'> 1<br>
+  <input type="radio" class="question6" value="2"> 2<br>
+  <input type="radio" class="question6" value="3"> 3<br>
+  <input type="radio" class="question6" value="4"> 4<br>  
+  <input type="radio" class="question6" value="5"> 5
 </form>
 
 <form>7.  I like to read for pleasure.<br>
-  <input type="radio" name="question7" value='1'> 1<br>
-  <input type="radio" name="question7" value="2"> 2<br>
-  <input type="radio" name="question7" value="3"> 3<br>
-  <input type="radio" name="question7" value="4"> 4<br>  
-  <input type="radio" name="questing7" value="5"> 5
+  <input type="radio" class="question7" value='1'> 1<br>
+  <input type="radio" class="question7" value="2"> 2<br>
+  <input type="radio" class="question7" value="3"> 3<br>
+  <input type="radio" class="question7" value="4"> 4<br>  
+  <input type="radio" class="question7" value="5"> 5
 </form>
 
 <form>8.  Friends is the greatest show ever.<br>
-  <input type="radio" name="question8" value='1'> 1<br>
-  <input type="radio" name="question8" value="2"> 2<br>
-  <input type="radio" name="question8" value="3"> 3<br>
-  <input type="radio" name="question8" value="4"> 4<br>  
-  <input type="radio" name="question8" value="5"> 5
+  <input type="radio" class="question8" value='1'> 1<br>
+  <input type="radio" class="question8" value="2"> 2<br>
+  <input type="radio" class="question8" value="3"> 3<br>
+  <input type="radio" class="question8" value="4"> 4<br>  
+  <input type="radio" class="question8" value="5"> 5
 </form>
 
 <form>9.  I always vote Democrate.<br>
-  <input type="radio" name="question9" value='1'> 1<br>
-  <input type="radio" name="question9" value="2"> 2<br>
-  <input type="radio" name="question9" value="3"> 3<br>
-  <input type="radio" name="question9" value="4"> 4<br>  
-  <input type="radio" name="question9" value="5"> 5
+  <input type="radio" class="question9" value='1'> 1<br>
+  <input type="radio" class="question9" value="2"> 2<br>
+  <input type="radio" class="question9" value="3"> 3<br>
+  <input type="radio" class="question9" value="4"> 4<br>  
+  <input type="radio" class="question9" value="5"> 5
 </form>
 
 <form>10.  I always choose a juicy steak over a salad.<br>
-  <input type="radio" name="question10" value='1'> 1<br>
-  <input type="radio" name="question10" value="2"> 2<br>
-  <input type="radio" name="question10" value="3"> 3<br>
-  <input type="radio" name="question10" value="4"> 4<br>  
-  <input type="radio" name="question10" value="5"> 5
-</form>
+  <input type="radio" class="question10" value='1'> 1<br>
+  <input type="radio" class="question10" value="2"> 2<br>
+  <input type="radio" class="question10" value="3"> 3<br>
+  <input type="radio" class="question10" value="4"> 4<br>  
+  <input type="radio" class="question10" value="5"> 5
+</form> -->
 	
-<button type="button" class="btn btn-primary">Submit</button>
+<button type="button" class="btn btn-primary" id='submitBtn'>Submit</button>
 
 <style>
 body{
@@ -130,6 +131,53 @@ button{
 
 
 </style>
+
+ <script type="text/javascript">
+
+ 	        $('#submitBtn').on("click", function() {
+            // var charName = $("#name").val();
+
+            var x = document.getElementsByName("question1");
+            console.log(x)
+
+            // var parameters = {
+            //     // Name: charName,
+            //     question1: $("question1").val(),
+            //     question2: $("question2").val(),
+            //     question3: $(".question3").val()
+                //  question4: $(".question4").val(), 
+               //  question5: $(".question5").val(),
+               //  question6: $(".question6").val(),
+               //  question7: $(".question7").val(),
+               //  question8: $(".question8").val(),                                                                
+              	// question9: $(".question9").val(),
+                // question10: $(".question10").val()
+            // };
+
+            // url = "http://localhost:3000/new?";
+
+            // console.log(url + $.param(parameters));
+
+            // // QUESTION: What does $.get do? What are the parameters it is expecting?
+            // $.get(url + $.param(parameters), function(data) {
+
+            //     console.log(data);
+            //     if (data == false) {
+            //         $("#name").text("The force is not strong with this one. Your character was not found. ");
+            //         $("#stats").hide();
+            //     } else {
+            //         $("#stats").show();
+            //         $("#name").text(data.name);
+            //         $("#role").text(data.role);
+            //         $("#age").text(data.age);
+            //         $("#forcePoints").text(data.forcePoints);
+            //     }
+
+            // });
+
+        });
+
+ </script>
 
 </body>
 </html>
