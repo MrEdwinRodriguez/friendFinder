@@ -9,8 +9,8 @@ var friendsList = [
 
 	},
 	{
-		"name": "Arnie"
-		"photo": "https://i.ytimg.com/vi/JQ4CadsW2UA/maxresdefault.jpg"		
+		"name": "Arnie",
+		"photo": "https://i.ytimg.com/vi/JQ4CadsW2UA/maxresdefault.jpg",		
 		"score": [2, 4, 2, 1, 5, 5, 3, 4, 3, 5]
 	}
 

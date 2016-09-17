@@ -10,8 +10,11 @@ app.get('/api/friends', function(req, res){
 });
 
 
+
 //api post request
 	app.post('/api/friends', function(req, res){
+
+		console.log(req.body);
 
 		for( i = 0; i<friends.scores.length; i++){
 
