@@ -6,7 +6,7 @@ var path = require ('path');
 
 //tells node that we are creating and express server
 var app = express();
-
+var PORT = process.env.PORT || 8080; 
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -17,6 +17,8 @@ app.use(bodyParser.json({type: 'application/vnd.api+json'}));
 require('./app/routing/api-routes.js')(app);
 require('./app/routing/html-routes.js')(app);
 
+
+// starts  server
 app.listen(PORT, function() {
 	console.log("App listening on PORT: " + PORT);
 });

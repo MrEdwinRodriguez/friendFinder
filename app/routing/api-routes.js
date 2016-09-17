@@ -3,25 +3,23 @@ var friends = require ('../data/friends.js');
 
 module.exports = function(app){
 
-
+//api get request
 app.get('/api/friends', function(req, res){
 
 	res.json(friends);
 });
 
+
+//api post request
 	app.post('/api/friends', function(req, res){
 
+		for( i = 0; i<friends.scores.length; i++){
 
-		if(friends.length < 5 ){
-			friends.push(req.body);
-			res.json(true); // KEY LINE
+			
+
+
 		}
 
-		// Or false if they don't have a table
-		// else{
-		// 	waitListData.push(req.body);
-		// 	res.json(false); // KEY LINE
-		// }
 
 	});
 
