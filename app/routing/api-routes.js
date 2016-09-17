@@ -38,6 +38,10 @@ app.get('/api/friends', function(req, res){
 		}
 
 		console.log(differenceArray)
+
+		var match = Math.min.apply( Math, differenceArray );
+		
+		console.log(match)
 	});
 
 
