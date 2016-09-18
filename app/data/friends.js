@@ -12,6 +12,11 @@ var friendsList = [
 		"name": "Arnie",
 		"photo": "https://i.ytimg.com/vi/JQ4CadsW2UA/maxresdefault.jpg",		
 		"scores": [2, 4, 2, 1, 5, 5, 3, 4, 3, 5]
+	},
+	{
+		"name": "Chuck",
+		"photo": 'http://cache.reelz.com/assets/content/blogimages/chucknorris-MIA2.jpg',
+		"scores": [2,3,2,1,4,1,1,1,1,5]
 	}
 
 ]

@@ -16,6 +16,9 @@ app.get('/api/friends', function(req, res){
 	app.post('/api/friends', function(req, res){
 
 		// console.log(req.body.answers);
+	
+		// push new player to friends
+		// friends.push(req.body);
 
 		var differenceArray = [];
 		var totalDifference;
@@ -27,8 +30,8 @@ app.get('/api/friends', function(req, res){
 				var totalDifference = 0;
 				for (r=0; r<10; r++){
 
-					var difference = req.body.answers[r]-friends[i].scores[r];
-					totalDifference =+ difference;
+					var difference = Math.abs(req.body.answers[r]-friends[i].scores[r]);
+					totalDifference += difference;
 
 
 				}
@@ -37,11 +40,21 @@ app.get('/api/friends', function(req, res){
 
 		}
 
+		//the difference of each persons scores
 		console.log(differenceArray)
 
+		//picks the lowest number in the array
 		var match = Math.min.apply( Math, differenceArray );
-		
+
+		//selects the index of the lowest number in the array
+		var bestIndex = differenceArray.indexOf(match);
+
 		console.log(match)
+		console.log(bestIndex);
+		console.log(friends[bestIndex]);
+
+
+		res.send(friends[bestIndex]);
 	});
 
 
